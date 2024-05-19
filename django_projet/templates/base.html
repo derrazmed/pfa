@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+    {% endblock %}
+</head>
+
+<body>
+    {% block body %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% endblock %}
+</body>
+
+</html>
