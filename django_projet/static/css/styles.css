@@ -108,8 +108,14 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
     margin-top: 150px;
 }
 
-body{
+.slider_bg_1{
     background-image: url(../img/banner/banner.png);
+}
+  
+body.slider_bg_1 {
+    background-image: url(../img/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .form-label{
