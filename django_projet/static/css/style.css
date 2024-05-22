@@ -1410,10 +1410,9 @@ h3 {
 /* line 1, ../../Arafath/CL/December/235. Job board/HTML/scss/_slider.scss */
 .slider_bg_1 {
   background-image: url(../img/banner/banner.png);
-  background-repeat: no-repeat;
 }
 
-body .slider_bg_1 {
+body.slider_bg_1 {
   background-image: url(../img/banner/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1433,6 +1432,13 @@ body .slider_bg_1 {
 /* line 10, ../../Arafath/CL/December/235. Job board/HTML/scss/_slider.scss */
 .slider_area .single_slider {
   height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slider_area .single_slider.signup{
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2680,7 +2686,7 @@ body .slider_bg_1 {
 }
 
 /* line 11, ../../Arafath/CL/December/235. Job board/HTML/scss/_category.scss */
-.catagory_area .cat_search .single_input input{
+.catagory_area .cat_search .single_input input {
   height: 50px;
   border: 1px solid #E8E8E8;
   padding: 20px;
@@ -2717,27 +2723,23 @@ body .slider_bg_1 {
 }
 
 /* line 34, ../../Arafath/CL/December/235. Job board/HTML/scss/_category.scss */
-.catagory_area .cat_search .single_input select {
+.catagory_area .cat_search .single_input .nice-select {
   width: 100%;
   height: 50px;
   line-height: 50px;
   color: #7A838B;
   font-size: 16px;
-  border: 1px solid #E8E8E8;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
 @media (max-width: 767px) {
   /* line 34, ../../Arafath/CL/December/235. Job board/HTML/scss/_category.scss */
-  .catagory_area .cat_search .single_input select {
+  .catagory_area .cat_search .single_input .nice-select {
     margin-bottom: 20px;
   }
 }
 
 /* line 43, ../../Arafath/CL/December/235. Job board/HTML/scss/_category.scss */
-.catagory_area .cat_search .single_input select:focus {
+.catagory_area .cat_search .single_input .nice-select:focus {
   outline: none;
 }
 
