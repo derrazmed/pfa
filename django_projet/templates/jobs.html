@@ -35,14 +35,8 @@
                                         <ul id="navigation">
                                             <li><a href="/">home</a></li>
                                             <li><a href="/jobs">Browse Job</a></li>
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="candidate.html">Candidates </a></li>
-                                                    <li><a href="job_details.html">job details </a></li>
-                                                    <li><a href="elements.html">elements</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="/candidates">Candidates</a></li>
+                                            <li><a href="/contact">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -52,7 +46,7 @@
                                     {% block content %}
                                         {% if user.is_authenticated %}
                                             <div class="phone_num d-none d-xl-block">
-                                                <a href="profile">{{ user.first_name }} {{ user.last_name }}</a>
+                                                <a href="/profile">{{ user.first_name }} {{ user.last_name }}</a>
                                             </div>
                                             <div class="d-none d-lg-block">
                                                 <form action="{% url 'logout' %}" method="post">
